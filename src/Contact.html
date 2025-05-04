@@ -9,6 +9,7 @@
 
   <!-- Link ke CSS Tailwind untuk styling halaman -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  
   <!-- Link ke icon library untuk menampilkan ikon yang lebih keren -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/react-icons/4.2.0/react-icons.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -41,6 +42,13 @@
         align-items: center;
       }
     }
+
+    /* CSS untuk membuat header tetap di atas saat di-scroll */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
   </style>
 </head>
 <body class="bg-gray-100">
@@ -49,13 +57,13 @@
   <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
     <!-- Logo "H" di kiri -->
     <div class="text-3xl font-bold text-gray-100">
-      H
+      H <!-- Logo atau nama aplikasi bisa diganti dengan gambar atau teks lain -->
     </div>
 
     <!-- Menu navigasi untuk tampilan desktop (tampilan besar) -->
     <nav class="hidden md:flex space-x-6">
       <!-- Link navigasi untuk halaman lain seperti Home, About, Contact -->
-      <a href="./HomePage.html" class="hover:bg-gray-600 px-4 py-2 rounded">Home</a>
+      <a href="./index.html" class="hover:bg-gray-600 px-4 py-2 rounded">Home</a>
       <a href="./About.html" class="hover:bg-gray-600 px-4 py-2 rounded">About</a>
       <a href="./Contact.html" class="hover:bg-gray-600 px-4 py-2 rounded">Contact</a>
     </nav>
@@ -100,7 +108,7 @@
       <!-- Deskripsi singkat di bawah ikon kontak -->
       <div class="col-span-2 mt-4">
         <p class="text-sm sm:text-base text-gray-600 max-w-xl mx-auto">
-          Feel free to reach out to me through email, WhatsApp, or Instagram! 
+          Feel free to reach out to me through email, WhatsApp, or Instagram! I'm available to discuss anything you'd like to know, whether it's about a project, collaboration, or any other inquiries.
         </p>
       </div>
     </div>
